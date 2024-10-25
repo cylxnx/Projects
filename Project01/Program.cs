@@ -1,5 +1,5 @@
-﻿using System.Runtime.CompilerServices;
-
+﻿//Cody Lane
+//clane15@stumail.northeaststate.edu
 namespace Project01
 {
     internal class Program
@@ -10,6 +10,9 @@ namespace Project01
 
         }
 
+        /// <summary>
+        /// One player mode. Prints a message that one player mode is only available in the COW DLC.
+        /// </summary>
         static void OnePlayerMode()
         {
             Game.PrintSmallHeader();
@@ -18,6 +21,9 @@ namespace Project01
             Console.Clear();
         }
 
+        /// <summary>
+        /// Two player mode. Prompts for player names and choices, then prints the results.
+        /// </summary>
         static void TwoPlayerMode()
         {
             Game.PrintSmallHeader();
@@ -45,14 +51,20 @@ namespace Project01
             Console.Clear();
         }
 
+        /// <summary>
+        /// Rules mode. Prints the rules of the game.
+        /// </summary>
         static void RulesMode()
         {
             Game.PrintSmallHeader();
             Game.PrintRules();
             Prompt.PromptForAnyKey();
             Console.Clear();
-        }
+    }
 
+        /// <summary>
+        /// Exit option. Prints a message and waits 2 seconds before clearing the console.
+        /// </summary>
         static void ExitOption()
         {
             Game.PrintLargeWelcomeMessage();
@@ -60,8 +72,11 @@ namespace Project01
             Console.WriteLine("Perhaps you should stay a while, and listen.");
             Thread.Sleep(2000);
             Console.Clear();
-        }
+}
 
+        /// <summary>
+        /// Main menu. Prints the welcome message and shows the menu.
+        /// </summary>
         static void MainMenu()
         {
             Game.PrintLargeWelcomeMessage();

@@ -43,14 +43,14 @@ namespace Project01
         /// <param name="playerTwoName">Player two name</param>
         /// <param name="playerTwoChoice">Player two character choice</param>
         public static void PrintResults(string playerOneName, char playerOneChoice, string playerTwoName, char playerTwoChoice)
-        {    
+        {
             if (CalculateWinner(playerOneChoice, playerTwoChoice) == 0)
             {
                 Console.WriteLine($"\n     {playerOneName} chose {Game.ConvertChoiceToName(playerOneChoice)}!");
                 Console.WriteLine($"     {playerTwoName} chose {Game.ConvertChoiceToName(playerTwoChoice)}!");
                 Console.WriteLine("\n    It's a tie!");
                 Console.WriteLine("\n");
-            }
+        }
             else if (CalculateWinner(playerOneChoice, playerTwoChoice) == 1)
             {
                 Console.WriteLine($"\n     {playerOneName} chose {Game.ConvertChoiceToName(playerOneChoice)}!");
