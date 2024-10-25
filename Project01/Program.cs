@@ -51,7 +51,7 @@ namespace Project01
             Game.PrintRules();
             Prompt.PromptForAnyKey();
             Console.Clear();
-        }
+    }
 
         static void ExitOption()
         {
@@ -60,7 +60,7 @@ namespace Project01
             Console.WriteLine("Perhaps you should stay a while, and listen.");
             Thread.Sleep(2000);
             Console.Clear();
-        }
+}
 
         static void MainMenu()
         {
