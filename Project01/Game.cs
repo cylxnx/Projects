@@ -1,6 +1,5 @@
-﻿using System.Drawing;
-using System.Security.Cryptography;
-
+﻿//Cody Lane
+//clane15@stumail.northeaststate.edu
 namespace Project01
 {
     /// <summary>
@@ -89,6 +88,10 @@ namespace Project01
             }
         }
 
+        /// <summary>
+        /// Prints the large welcome message for the game, with
+        /// ASCII art accents and appropriately demonic color scheme.
+        /// </summary>
         public static void PrintLargeWelcomeMessage()
         {
             #region variables
@@ -121,26 +124,36 @@ namespace Project01
             #endregion
         }
 
+        /// <summary>
+        /// Prints the small header for the game in red text, returning to white text after.
+        /// </summary>
         public static void PrintSmallHeader()
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("-------- Wirt, Deckard, Diablo --------");
             Console.ForegroundColor = ConsoleColor.White;
-        } 
+        }
 
+        /// <summary>
+        /// Prints the menu for the game and returns the user's choice.
+        /// </summary>
+        /// <returns>user choice as a char value</returns>
         public static char ShowMenu()
         {
-            Console.WriteLine("     1. 1P Game");
-            Console.WriteLine("     2. 2P Game");
-            Console.WriteLine("     3. Rules");
-            Console.WriteLine("     4. Exit");
+            Console.WriteLine("      1. 1P Game");
+            Console.WriteLine("      2. 2P Game");
+            Console.WriteLine("      3. Rules");
+            Console.WriteLine("      4. Exit");
             Console.WriteLine();
-            Console.Write("Enter your choice (1-4): ");
+            Console.Write(" Enter your choice (1-4): ");
             return Console.ReadKey().KeyChar;
 
 
         }
 
+        /// <summary>
+        /// Prints the rules of the game in red text, returning to white text after.
+        /// </summary>
         public static void PrintRules()
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
