@@ -163,8 +163,7 @@ namespace Project01
             Console.WriteLine("      Diablo beats Deckard");
             Console.WriteLine("      Deckard beats Wirt");
             Console.WriteLine();
-            Console.WriteLine("------Press any key to continue-----");
-            Console.ReadKey(true);
+            Console.WriteLine("--- ‡ --- ‡ --- ‡ --- ‡ --- ‡ --- ‡ ---");
             Console.ForegroundColor = ConsoleColor.White;
         }
     }
