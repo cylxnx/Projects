@@ -1,4 +1,6 @@
-﻿namespace Project01
+﻿//Cody Lane
+//clane15@stumail.northeaststate.edu
+namespace Project01
 {
     /// <summary>
     /// Prompt methods for user input
