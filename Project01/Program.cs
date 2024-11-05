@@ -76,7 +76,7 @@ namespace Project01
             Game.PrintRules();
             Prompt.PromptForAnyKey();
             Console.Clear();
-    }
+        }
 
         /// <summary>
         /// Exit option. Prints a message and waits 2 seconds before clearing the console.
@@ -88,7 +88,7 @@ namespace Project01
             Console.WriteLine("\nPerhaps you should stay a while, and listen.");
             Thread.Sleep(2000);
             Console.Clear();
-}
+        }
 
         /// <summary>
         /// Main menu with choices for one player mode, two player mode, rules, and exit.
@@ -100,40 +100,59 @@ namespace Project01
             Console.WriteLine();
             char choice = Game.ShowMenu();
 
-            switch (choice)
+            if (choice == '1' || choice == '2' || choice == '3' || choice == '4')
             {
-                case '1':
-                    Console.Clear();
-                    OnePlayerMode();
-                    MainMenu();
-                    break;
-                case '2':
-                    Console.Clear();
-                    TwoPlayerMode();
-                    MainMenu();
-                    break;
-                case '3':
-                    Console.Clear();
-                    RulesMode();
-                    MainMenu();
-                    break;
-                case '4':
-                    Console.Clear();
-                    ExitOption();
-                    break;
-                default:
-                    break;
+                switch (choice)
+                {
+                    case '1':
+                        Console.Clear();
+                        OnePlayerMode();
+                        MainMenu();
+                        break;
+                    case '2':
+                        Console.Clear();
+                        TwoPlayerMode();
+                        MainMenu();
+                        break;
+                    case '3':
+                        Console.Clear();
+                        RulesMode();
+                        MainMenu();
+                        break;
+                    case '4':
+                        Console.Clear();
+                        ExitOption();
+                        break;
+                    default:
+                        break;
+                }
             }
+            else
+            {
+                Console.Clear();
+                MainMenu();
+            }
+
+
+
+
+
+
+
+
+            
         }
     }
 }
-         
-    
-
-    
 
 
-     
+
+
+
+
+
+
+
 
 
 
