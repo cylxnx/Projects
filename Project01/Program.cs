@@ -21,9 +21,13 @@ namespace Project01
 
             Game.PrintSmallHeader();
             Console.WriteLine();
-            Console.WriteLine(OneP.PadLeft(28));
-            Console.WriteLine(OnlY.PadLeft(25));
-            Console.WriteLine(CowL.PadLeft(28));
+            Console.WriteLine(OneP.PadLeft(52));
+            Console.WriteLine();
+            Console.WriteLine(OnlY.PadLeft(48));
+            Console.WriteLine();
+            Console.WriteLine(CowL.PadLeft(52));
+            Console.WriteLine("\n");
+            Game.PrintSmallHeader();
             Thread.Sleep(3000);
             Console.Clear();
         }

@@ -116,7 +116,7 @@ namespace Project01
                 | (__/  )| (____/\| (____/\|  /  \ \| )   ( || ) \ \__| (__/  ) 
                 (______/ (_______/(_______/|_/    \/|/     \||/   \__/(______/ ");
             Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.Write(@"
+            Console.WriteLine(@"
                      ______  _________ _______  ______   _        _______       
                     (  __  \ \__   __/(  ___  )(  ___ \ ( \      (  ___  )      
                     | (  \  )   ) (   | (   ) || (   ) )| (      | (   ) |      
@@ -126,6 +126,9 @@ namespace Project01
                     | (__/  )___) (___| )   ( || )___) )| (____/\| (___) |      
                     (______/ \_______/|/     \||/ \___/ (_______/(_______)");
             Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("                    v2.0");
+
+
 
         }
 
@@ -158,12 +161,23 @@ namespace Project01
         /// </summary>
         public static void PrintRules()
         {
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine("\n\n                                    Wirt Beats Diablo          ");
-            Console.WriteLine("\n                                   Diablo Beats Deckard       ");
-            Console.WriteLine("\n                                    Deckard Beats Wirt         ");
-            Console.WriteLine("\n----------- ‡ ---------- ‡ ---------- ‡ ---------- ‡ ---------- ‡ ---------- ‡ ----------\n\n");
-            Console.ForegroundColor = ConsoleColor.White;
+            string flavor = "Wirt, Deckard, Diablo is a game of strategy and cunning.";
+            string rules = "Choose your character and see who wins!";
+            string head = "The rules are simple:";
+            string wirt = "Wirt Beats Diablo";
+            string deckard = "Deckard Beats Wirt";
+            string diablo = "Diablo Beats Deckard";
+
+            Console.WriteLine("\n");
+            Console.WriteLine(flavor.PadLeft(72));
+            Console.WriteLine(rules.PadLeft(62));
+            Console.WriteLine("\n");
+            Console.WriteLine(head.PadLeft(54));
+            Console.WriteLine(wirt.PadLeft(52));
+            Console.WriteLine(deckard.PadLeft(52));
+            Console.WriteLine(diablo.PadLeft(53));
+            Console.WriteLine("\n");
+            PrintSmallHeader();
         }
     }
 }
