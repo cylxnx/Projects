@@ -58,7 +58,7 @@ namespace Project01
                 Console.WriteLine($"\n     {playerOneName} wins!");
                 Console.WriteLine("\n");
             }
-            else
+            else if (CalculateWinner(playerOneChoice,playerTwoChoice) == 2)
             {
                 Console.WriteLine($"\n     {playerOneName} chose {Game.ConvertChoiceToName(playerOneChoice)}!");
                 Console.WriteLine($"     {playerTwoName} chose {Game.ConvertChoiceToName(playerTwoChoice)}!");
