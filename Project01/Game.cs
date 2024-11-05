@@ -147,8 +147,6 @@ namespace Project01
             Console.WriteLine();
             Console.Write(" Enter your choice (1-4): ");
             return Console.ReadKey().KeyChar;
-
-
         }
 
         /// <summary>
