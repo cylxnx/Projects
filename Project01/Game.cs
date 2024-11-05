@@ -145,8 +145,7 @@ namespace Project01
             Console.WriteLine("      3. Rules");
             Console.WriteLine("      4. Exit");
             Console.WriteLine();
-            Console.Write(" Enter your choice (1-4): ");
-            return Console.ReadKey().KeyChar;
+            return Prompt.PromptForChar(" Enter your choice (1-4): ");  
         }
 
         /// <summary>
