@@ -94,34 +94,39 @@ namespace Project01
         /// </summary>
         public static void PrintLargeWelcomeMessage()
         {
-            #region variables
-            string wi = "Wirt";
-            string de = "Deckard";
-            string di = "Diablo";
-            string we = "Welcome to:";
-            string ar = "‡    ‡    ‡";
-            string li = "†------------------------†";
-            #endregion
 
-            #region title screen
             Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine(li);
+            Console.Write(@"
+                     __                _________ _______ ________      __       
+                    /  \      |\     /|\__   __/(  ____ )\__   __|    /  \      
+                   | () |     | )   ( |   ) (   | (    )|   ) (      | () |     
+                 |\_\  /_/|   | | _ | |   | |   | (____)|   | |    |\_\  /_/|   
+                 | _    _ |   | |( )| |   | |   |     __)   | |    | _    _ |   
+                 |/ |  | \|   | || || |   | |   | (\ (      | |    |/ |  | \|   
+                    |  |      | () () |___) (___| ) \ \__   | |       |  |      
+                   /____\     (_______)\_______/|/   \__/   )_(      /____\");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(we.PadLeft(18));
-            Console.WriteLine();
-            Console.WriteLine(ar.PadLeft(18));
-            Console.WriteLine();
+            Console.Write(@"
+                 ______   _______  _______  _        _______  ______   ______   
+                (  __  \ (  ____ \(  ____ \| \    /\(  ___  )(  ____ )(  __  \  
+                | (  \  )| (    \/| (    \/|  \  / /| (   ) || (    )|| (  \  ) 
+                | |   ) || (__    | |      |  (_/ / | (___) || (____)|| |   ) | 
+                | |   | ||  __)   | |      |   _ (  |  ___  ||     __)| |   | | 
+                | |   ) || (      | |      |  ( \ \ | (   ) || (\ (   | |   ) | 
+                | (__/  )| (____/\| (____/\|  /  \ \| )   ( || ) \ \__| (__/  ) 
+                (______/ (_______/(_______/|_/    \/|/     \||/   \__/(______/ ");
             Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine(wi.PadLeft(15));
-            Console.WriteLine(de.PadLeft(16));
-            Console.WriteLine(di.PadLeft(16));
+            Console.Write(@"
+                     ______  _________ _______  ______   _        _______       
+                    (  __  \ \__   __/(  ___  )(  ___ \ ( \      (  ___  )      
+                    | (  \  )   ) (   | (   ) || (   ) )| (      | (   ) |      
+                    | |   ) |   | |   | (___) || (__/ / | |      | |   | |      
+                    | |   | |   | |   |  ___  ||  __ (  | |      | |   | |      
+                    | |   ) |   | |   | (   ) || (  \ \ | |      | |   | |      
+                    | (__/  )___) (___| )   ( || )___) )| (____/\| (___) |      
+                    (______/ \_______/|/     \||/ \___/ (_______/(_______)");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine();
-            Console.WriteLine(ar.PadLeft(18));
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine(li);
-            Console.ForegroundColor = ConsoleColor.White;
-            #endregion
+
         }
 
         /// <summary>
@@ -130,7 +135,7 @@ namespace Project01
         public static void PrintSmallHeader()
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine("-------- Wirt, Deckard, Diablo --------");
+            Console.WriteLine("-------------------‡-Wirt-‡-----------‡-Deckard-‡-----------‡-Diablo-‡-------------------");
             Console.ForegroundColor = ConsoleColor.White;
         }
 
@@ -140,12 +145,12 @@ namespace Project01
         /// <returns>user choice as a char value</returns>
         public static char ShowMenu()
         {
-            Console.WriteLine("      1. 1P Game");
-            Console.WriteLine("      2. 2P Game");
-            Console.WriteLine("      3. Rules");
-            Console.WriteLine("      4. Exit");
+            Console.WriteLine("          1. 1P Game");
+            Console.WriteLine("          2. 2P Game");
+            Console.WriteLine("          3. Rules");
+            Console.WriteLine("          4. Exit");
             Console.WriteLine();
-            return Prompt.PromptForChar(" Enter your choice (1-4): ");  
+            return Prompt.PromptForChar("   Enter your choice (1-4): ");  
         }
 
         /// <summary>
@@ -154,13 +159,10 @@ namespace Project01
         public static void PrintRules()
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("      Wirt beats Diablo");
-            Console.WriteLine("      Diablo beats Deckard");
-            Console.WriteLine("      Deckard beats Wirt");
-            Console.WriteLine();
-            Console.WriteLine("--- ‡ --- ‡ --- ‡ --- ‡ --- ‡ --- ‡ ---");
+            Console.WriteLine("\n\n                                    Wirt Beats Diablo          ");
+            Console.WriteLine("\n                                   Diablo Beats Deckard       ");
+            Console.WriteLine("\n                                    Deckard Beats Wirt         ");
+            Console.WriteLine("\n----------- ‡ ---------- ‡ ---------- ‡ ---------- ‡ ---------- ‡ ---------- ‡ ----------\n\n");
             Console.ForegroundColor = ConsoleColor.White;
         }
     }
