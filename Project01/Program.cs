@@ -50,7 +50,7 @@ namespace Project01
             Console.WriteLine();
             Game.PrintRules();
             Console.WriteLine();
-            Console.WriteLine("Choose your character:");
+            Console.WriteLine("Take care and choose wisely:");
             Console.WriteLine("Wirt[1] Deckard[2] Diablo[3]");
             Console.WriteLine();
             char playerOneChoice = Prompt.PromptForCharHidden($"     {playerOneName} ->");

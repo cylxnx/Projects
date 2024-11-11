@@ -161,16 +161,19 @@ namespace Project01
         /// </summary>
         public static void PrintRules()
         {
-            string flavor = "Wirt, Deckard, Diablo is a game of strategy and cunning.";
-            string rules = "Choose your character and see who wins!";
+            string welc = "Welcome to Wirt, Deckard, Diablo!";
+            string flavor = "This is a game of horrible strategy and diabolical cunning.";
+            string rules = "Choose your soulstone and defeat your opponent!";
             string head = "The rules are simple:";
             string wirt = "Wirt Beats Diablo";
             string deckard = "Deckard Beats Wirt";
             string diablo = "Diablo Beats Deckard";
 
-            Console.WriteLine("\n");
+            Console.WriteLine();
+            Console.WriteLine(welc.PadLeft(60));
+            Console.WriteLine();
             Console.WriteLine(flavor.PadLeft(72));
-            Console.WriteLine(rules.PadLeft(62));
+            Console.WriteLine(rules.PadLeft(68));
             Console.WriteLine("\n");
             Console.WriteLine(head.PadLeft(54));
             Console.WriteLine(wirt.PadLeft(52));
