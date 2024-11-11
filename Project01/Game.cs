@@ -157,7 +157,7 @@ namespace Project01
         }
 
         /// <summary>
-        /// Prints the rules of the game in red text, returning to white text after.
+        /// Prints the rules of the game in a formatted manner, along with flavor text.
         /// </summary>
         public static void PrintRules()
         {
